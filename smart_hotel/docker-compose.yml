@@ -20,3 +20,5 @@ services:
     environment:
       CRATE_HEAP_SIZE: 2g
       discovery.type: single-node
+    volumes:
+      - ./crate_data:/data

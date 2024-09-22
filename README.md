@@ -10,6 +10,8 @@ This project is an IoT-based sensor monitoring system designed to manage Indoor 
 3. Automated Alerts: Sends real-time notifications via Line Notify to alert technicians when IAQ conditions are outside of comfort ranges.
 [Check condition and notification](/smart_hotel/IoT_sensor/notification.py)
 
+Youtube Link https://youtu.be/B23c-5LexCw
+
 ## Setup and Running Project
 ### Prerequisite:
 - Python 3.x
@@ -22,3 +24,5 @@ py manage.py runserver
 
 ### Run Docker containers:
 ./deploy.sh
+
+
