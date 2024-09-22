@@ -11,6 +11,8 @@ This project is an IoT-based sensor monitoring system designed to manage Indoor 
 [Check condition and notification](/smart_hotel/IoT_sensor/notification.py)
 
 Youtube Link https://youtu.be/B23c-5LexCw
+![CrateDB Query Data](/docs/image/Query%20Data.png)
+(I'm very sorry for the video that not show the website when record.)
 
 ## Setup and Running Project
 ### Prerequisite:
