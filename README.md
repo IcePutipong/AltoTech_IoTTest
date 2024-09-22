@@ -1,7 +1,24 @@
-# AltoTech_IoTTest
+# Smart Hotel IoT Sensor System
+This project is an IoT-based sensor monitoring system designed to manage Indoor Air Quality (IAQ) conditions in rooms and notify technicians when the environment falls outside of guest comfort zones. The project leverages Django, CrateDB, and Line Notify to monitor sensor data and automate notifications when discomfort is detected.
 
-# Setup Project
-    1. install Python
-    2. install Django
-    3. install Docker
-    4. install cratedb
+# Feature
+1. Data Monitoring: Continuously collects temperature, humidity, and CO2 data from IoT sensors deployed in the hotel rooms.
+[csv_import File](IoT_sensor/scripts/csv_import.py)
+[Mock data file](IoT_sensor/scripts/data/mock_iaq_data.csv)
+
+2. IAQ Condition Monitoring: Periodically checks IAQ conditions over the past 5 minutes and evaluates whether they are within guest comfort ranges.
+3. Automated Alerts: Sends real-time notifications via Line Notify to alert technicians when IAQ conditions are outside of comfort ranges.
+[Check condition and notification](IoT_sensor/notification.py)
+
+## Setup and Running Project
+### Prerequisite:
+- Python 3.x
+- Docker
+- Docker-Compose
+- Line Notify Token
+
+### Run Django server:
+py manage.py runserver
+
+### Run Docker containers:
+./deploy.sh
