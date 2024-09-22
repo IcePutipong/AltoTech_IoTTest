@@ -3,12 +3,12 @@ This project is an IoT-based sensor monitoring system designed to manage Indoor 
 
 # Feature
 1. Data Monitoring: Continuously collects temperature, humidity, and CO2 data from IoT sensors deployed in the hotel rooms.
-[csv_import File](IoT_sensor/scripts/csv_import.py)
-[Mock data file](IoT_sensor/scripts/data/mock_iaq_data.csv)
+[csv_import File](/smart_hotel/scripts/csv_import.py)
+[Mock data file](/smart_hotel/scripts/data/mock_iaq_data.csv)
 
 2. IAQ Condition Monitoring: Periodically checks IAQ conditions over the past 5 minutes and evaluates whether they are within guest comfort ranges.
 3. Automated Alerts: Sends real-time notifications via Line Notify to alert technicians when IAQ conditions are outside of comfort ranges.
-[Check condition and notification](IoT_sensor/notification.py)
+[Check condition and notification](/smart_hotel/IoT_sensor/notification.py)
 
 ## Setup and Running Project
 ### Prerequisite:
