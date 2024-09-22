@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"  # Expose Django app on port 8000
+    depends_on:
+      - cratedb  # CrateDB dependency
+
+  cratedb:
+    image: crate
+    ports:
+      - "4200:4200"  # Admin UI for CrateDB
+      - "5432:5432"  # CrateDB PostgreSQL compatibility port
+    environment:
+      CRATE_HEAP_SIZE: 2g
+      discovery.type: single-node
